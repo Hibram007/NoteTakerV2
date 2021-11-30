@@ -1,10 +1,6 @@
-# Note Taker 
+# NoteTakerV2
+- This repo is the second repo for this project with its own seperate VS code files, heroku repo, and github repo. There is a rendering error that does not go away on the original repo but does full work on this repo.
 
-The following is an Express.Js app that is connected to a pre-made front end. 
-The purspose of this add is to be able to save, view , and delete notes from a note taker app interface.
+- Please use https://github.com/Hibram007/NoteTaker to evaluate commit history and error resolution attempts.
 
-## Tech Used
-Node.js
-JS 
-HTML
-Heroku
+
