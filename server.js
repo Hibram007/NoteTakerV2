@@ -4,22 +4,19 @@ const fs = require("fs");
 const path = require('path')
 
 
-// initialize an express application
+// instantiate an express application
 const app = express();
 
 // middleware
 app.use(express.static('public'));
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 //API
 app.get('/api/notes', (req, res) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         res.json(JSON.parse(data))
     })
 })
-
 app.post('/api/notes', (req, res) => {
 
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
